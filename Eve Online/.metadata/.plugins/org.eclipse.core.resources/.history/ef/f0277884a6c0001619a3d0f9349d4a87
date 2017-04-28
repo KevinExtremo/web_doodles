@@ -1,0 +1,13 @@
+<?php
+
+namespace eXmarket;
+
+class MarketGroup
+{
+	
+}
+
+
+
+
+?>

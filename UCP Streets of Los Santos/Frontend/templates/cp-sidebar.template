@@ -1,0 +1,34 @@
+<!-- cp content where sidebar and main content is -->
+<section class="cp-content">
+    <!-- cp sidebar -->
+    <div class="col-lg-2 col-md-2 col-sm-2">
+        <section class="cp-sidebar">
+            <div class="sidebar-itemgroup">
+                <div class="sidebar-menuitem sidebar-menuactive" id="sidebar-characters">Characters</div>
+                <div class="sidebar-subgroup"  menu-parent='sidebar-characters'>
+                    [@characterlist]
+                    <div class="sidebar-subaction">Create New</div>
+                    <div class="sidebar-activetrimmer"></div>
+                </div>
+                <div class="sidebar-menuitem" id="sidebar-factionpanel">Faction Panel</div>
+                <div class="sidebar-subgroup"  menu-parent='sidebar-factionpanel'>
+                    [@factionlist]
+                    <div class="sidebar-subaction">Create New</div>
+                    <div class="sidebar-activetrimmer"></div>
+                </div>
+<!--            <div class="sidebar-menuitem" id="sidebar-adminpanel">Admin Panel</div>
+                <div class="sidebar-subgroup"  menu-parent='sidebar-adminpanel'>
+                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Recent Admin Actions</div>
+                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Admin Logs</div>
+                    <div class="sidebar-subaction">Ban Player</div>
+                    <div class="sidebar-activetrimmer"></div>
+                </div> -->
+                <div class="sidebar-menuitem" id="sidebar-settings">Settings</div>
+                <div class="sidebar-subgroup"  menu-parent='sidebar-settings'>
+                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Account Settings</div>
+                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Character Settings</div>
+                    <div class="sidebar-activetrimmer"></div>
+                </div>
+            </div>
+        </section>
+    </div>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{site.description}}">
+    <meta name="keywords" content="{{site.keywords}}">
+    <meta name="robots" content="index,follow">
+    <!-- Icon stuff -->
+    <link rel="icon" sizes="196x196" href="icons/icon196.png">
+    <link rel="icon" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-startup-image" href="icons/icon196.png">
+    <link rel="shortcut-icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" href="icons/favicon.png" sizes="32x32">
+
+
+    <head>
+        <!-- HTML5 shim and respond.js for IE8 and below support. -->
+        <!--[if lt IE 9]>
+            <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="vendor/afarkas/html5shiv/dist/html5shiv.min.js"><\/script><script src="vendor/rogeriopradoj/respond/dest/respond.min.js"><\/script>')</script>
+            <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- Google Fonts -->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Helvetica+Neue">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- personal css -->
+        <link rel="stylesheet" href="../css/main.css">
+        {% block sidebar_styles %}{% endblock %}
+        {% block styles %}{% endblock %}
+
+        <!-- Personal code for header here -->
+        <title>{% block title %}{% endblock %} - {{site.title}}</title>
+
+    </head>
+    <body>
+        <!-- Inform user of outdated browsers -->
+        <script>
+          var $buoop = {reminder:0,reminderClosed:1};
+          function $buo_f(){
+           var e = document.createElement("script");
+           e.src = "//browser-update.org/update.min.js";
+           document.body.appendChild(e);
+          };
+          try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+          catch(e){window.attachEvent("onload", $buo_f)}
+        </script>
+
+
+        <!-- container -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2">
+              {% block sidebar %}{% endblock %}
+            </div>
+            <div class="col-md-10">
+              {% block content %}{% endblock %}
+            </div>
+          </div>
+          <div class="row">
+            <!-- footer credits -->
+            <footer>
+                <div class="col-md-4 col-md-offset-4"><p>Copyright 2017&copy; developed by Kevin 'Extremo' Sekin</p></div>
+            </footer>
+          </div>
+        <!-- end of container -->
+        </div>
+
+
+
+        <!-- All scripts go below this point to allow the page to load fully before scripts are loaded. -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="components/jquery/jquery.min.js"\x3C/script>')</script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>$.fn.modal || document.write('<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"\x3C/script>')</script>
+        <!-- Bootstrap CSS fallback -->
+        <script>
+          var $span = $('<span class="bs hidden"></span>');
+          var $bs = $('body').append($span).find('.bs');
+
+          if($bs.css('display') !== 'none')
+          {
+  	         $("head").append('<link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">');
+          }
+          $bs.remove();
+        </script>
+    </body>
+</html>

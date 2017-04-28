@@ -1,0 +1,13 @@
+<!-- cp-header where account name and icons are -->
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <section class="cp-header">
+        <img class="border" src="../images/avatar-border.png">
+        <img class="avatar" src="../images/[@avatar]" />
+        <h1>[@username]</h1>
+        <div class="cp-nav hidden-xs hidden-sm hidden-md">
+            <a href="#"><span class="glyphicon glyphicon-cog"></span></a>
+            <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+            <a href="#"><span class="glyphicon glyphicon-off"></span></a>
+        </div>
+    </section>
+</div>

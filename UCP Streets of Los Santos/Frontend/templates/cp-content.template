@@ -1,0 +1,7 @@
+<!-- cp main content -->
+    <div class="col-lg-10 col-md-10 col-sm-10">
+        <section class="cp-main">
+            [@content]
+        </section>
+    </div>
+</section>

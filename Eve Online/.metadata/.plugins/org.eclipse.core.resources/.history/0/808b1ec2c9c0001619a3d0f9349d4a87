@@ -1,0 +1,23 @@
+<?php
+
+namespace eXmarket;
+
+class MarketGroup
+{
+	private $unique_id;
+	private $eve_id;
+	private $name;
+	private $description;
+	
+	public function __construct($eve_id,$name,$description)
+	{
+		$this->eve_id = $eve_id;
+		$this->name = $name;
+		$this->description = $description;
+	}
+}
+
+
+
+
+?>

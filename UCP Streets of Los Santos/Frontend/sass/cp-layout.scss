@@ -1,0 +1,215 @@
+@import 'colors';
+@import 'images';
+@import 'mixins';
+body
+{
+    background: url($cp-background) no-repeat center center fixed;
+    @include background-size(cover);
+}
+.row
+{
+    width: 100%;
+}
+.navbar-custom 
+{
+    background: $primary-color;
+}
+.navbar-brand 
+{
+    color: $primary-color-text;
+    &:hover, &:focus, &:active
+    {
+        box-shadow: none;
+        color: $primary-color-text;
+    }
+}
+.navbar-custom
+{
+    position: relative;
+    li 
+    {
+        a 
+        {
+            color: $primary-color-text;
+            &:hover, &:focus, &:active
+            {
+                color: $primary-color-text;
+                background: $primary-color-shade;
+                box-shadow: none;
+            }
+        }
+    }
+}
+.banner
+{
+    position: relative;
+    margin: 0;
+    margin-top: -25px;
+    padding: 0;
+    width: 100%;
+    img 
+    {
+        width: 100%;
+        z-index: -1;
+    }
+    .banner-footer
+    {
+        width: 100%;
+        @include transparent-background(#444,0.45);
+        position: absolute;
+        top: 214px;
+        left: 0;
+        .banner-content
+        {
+            margin-left: 205px;
+            p 
+            {
+                float: left;
+                margin-top: 5px;
+                color: $cp-banner-footer-primary;
+                span 
+                {
+                    color: lighten($primary-color-shade,20%);
+                    margin-right: 15px;
+                }
+            }   
+        }
+    }
+}
+.cp-header
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: $primary-color;
+    color: $primary-color-text;
+    .border
+    {
+        position:absolute;
+        top: -64px;
+        left: 14px;
+        z-index: 0;
+    }
+    .avatar
+    {
+        position: absolute;
+        top: -60px;
+        left: 18px;
+        z-index: 1;
+    }
+    h1
+    {
+        float: left;
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 12px;
+        padding-left: 204px;
+    }
+    a 
+    {
+        display:block;
+        color: $primary-color-text;
+        padding-left: 950px;
+        &:hover, &:focus, &:active
+        {
+            color: $primary-color-text;
+            background: $primary-color-shade;
+            box-shadow: none;
+        }
+        span
+        {
+            float: left;
+            font-size: 18px;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+    }
+}
+.cp-content
+{
+    width: 100%;
+    .cp-sidebar
+    {
+        @include alpha-attribute('background-color', rgba(white, 0.9), white);
+        z-index: -1;
+        width: 120%;
+        .sidebar-itemgroup
+        {
+            padding-top: 70px;
+            padding-left: 13%;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            img 
+            {
+                float: left;
+                padding-left: 6%;
+                padding-top: 4%;
+            }
+            .sidebar-menuitem
+            {
+                &:hover
+                {
+                    cursor: pointer;
+                    color: $primary-color;
+                }
+            }
+            .sidebar-menuactive
+            {
+                text-decoration: underline;
+                color: $primary-color;
+                padding-bottom: 10px;
+                &:hover
+                {
+                    cursor: pointer;
+                    color: $primary-color;
+                }
+            }
+            .sidebar-activetrimmer
+            {
+                content: " ";
+                padding-top: 10px;
+            }
+            .sidebar-subitem
+            {
+                font-size: 12px;
+                text-align: left;
+                padding-left: 10%;
+                &:hover
+                {
+                    cursor: pointer;
+                    color: $primary-color;
+                }
+            }
+            .sidebar-subaction
+            {
+                font-size: 13px;
+                text-align: left;
+                padding-left: 10%;
+                text-decoration: underline;
+                color: crimson;
+                &:hover
+                {
+                    cursor: pointer;
+                    color: black;
+                }
+            }
+        }
+    }
+    .cp-main
+    {
+        @include alpha-attribute('background-color', rgba(white, 0.6), white);
+        z-index: -1;
+        margin-left: 2px;
+    }
+}
+footer
+{
+    @include transparent-background(#000,0.55);
+    @include always-bottom();
+    color: $cp-footer-text-color;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 11px;
+}

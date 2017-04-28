@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add a description here -->
+    <meta name="description" content="[@description]">
+    <meta name="keywords" content="[@keywords]">
+    <meta name="robots" content="index,follow">
+    <!-- Icon stuff -->
+    <link rel="icon" sizes="196x196" href="icons/icon196.png">
+    <link rel="icon" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-startup-image" href="icons/icon196.png">
+    <link rel="shortcut-icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" href="icons/favicon.png" sizes="32x32">
+    
+    
+    <head>
+        <!-- HTML5 shim and respond.js for IE8 and below support. -->
+        <!--[if lt IE 9]>
+            <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="html5shiv/dist/html5shiv.min.js"><\/script>')</script>
+            <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- Google Fonts -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- personal css -->
+        <link rel="stylesheet" href="../css/landing.css">
+              
+        <!-- Personal code for header here -->
+        <title>[@title]</title>
+        
+    </head>
+    <body>
+        <!-- Inform user of outdated browsers -->
+        <script> 
+        var $buoop = {reminder:0,reminderClosed:1}; 
+        function $buo_f(){ 
+         var e = document.createElement("script"); 
+         e.src = "//browser-update.org/update.min.js"; 
+         document.body.appendChild(e);
+        };
+        try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+        catch(e){window.attachEvent("onload", $buo_f)}
+        </script> 
+        
+        
+        <!-- container -->
+        <div class="container">
+            <!-- logo -->
+            <header id="logo" class="row">
+                <div class="col-md-3"></div><!-- empty to center logo -->
+                <div class="col-md-6"><img src="../images/logo.png"/></div>
+                <div class="col-md-3"></div><!-- empty to center logo -->
+            </header>
+            <!-- login and register -->
+            <div class="row">
+                <div class="col-md-4"></div><!-- empty to center login/register -->
+                <div class="col-md-4">
+                    <section id="login">
+                        <div class="row">
+                            <div class="col-md-1"></div><!-- empty magic -->
+                            <div class="col-md-10">
+                                <!-- code for login and register -->
+                                <input type="text" class="form-control input-style" id="loginusername" placeholder="Username">
+                                <input type="password" class="form-control input-style" id="loginpassword" placeholder="Password">
+                                <input class="btn btn-default center-block button-style" id="loginsubmit" type="submit" value="Login">
+                                <p>Don't have an Account? <a onClick="switchForm()">Click here to register</a>.</p>
+                            </div>
+                            <div class="col-md-1"></div><!-- empty magic -->
+                        </div>
+                    </section>
+                    <section id="register">
+                        <div class="row">
+                            <div class="col-md-1"></div><!-- empty magic -->
+                            <div class="col-md-10">
+                                <!-- code for login and register -->
+                                <input type="text" class="form-control input-style" id="registerusername" placeholder="Username">
+                                <input type="email" class="form-control input-style" id="registeremail" placeholder="Email">
+                                <input type="email" class="form-control input-style" id="registeremailtwo" placeholder="Verify Email">
+                                <input type="password" class="form-control input-style" id="registerpassword" placeholder="Password">
+                                <input type="password" class="form-control input-style" id="registerpasswordtwo" placeholder="Verify Password">
+                                <input class="btn btn-default center-block button-style" id="registersubmit" type="submit" value="Register">
+                                <p>Already have an account? <a onClick="switchForm()">Click here to login</a>.</p>
+                            </div>
+                            <div class="col-md-1"></div><!-- empty magic -->
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-4"></div><!-- empty to center login/register -->
+            </div>
+            <!-- footer credits -->
+            <footer>
+                <div class="col-md-4"></div><!-- empty magic -->
+                <div class="col-md-4"><p>Copyright 2017&copy; developed by Kevin 'Extremo' Sekin</p></div>
+                <div class="col-md-4"></div><!-- empty magic -->
+            </footer>
+        <!-- end of container -->
+        </div>
+        
+        
+        
+        <!-- All scripts go below this point to allow the page to load fully before scripts are loaded. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="jquery-3.1.0/jquery-3.1.0.min.js"\x3C/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>$.fn.modal || document.write('<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"\x3C/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="../js/landing.js"></script>
+    </body>
+</html>

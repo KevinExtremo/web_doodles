@@ -1,0 +1,16 @@
+<?php
+
+namespace eXmarket;
+
+class MarketGroup
+{
+	private $unique_id;
+	private $eve_id;
+	private $name;
+	private $
+}
+
+
+
+
+?>

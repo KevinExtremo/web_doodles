@@ -1,0 +1,62 @@
+@import 'reset';
+@import 'mixins';
+@import 'colors';
+@import 'images';
+
+body
+{
+    background: url($landing-background) no-repeat center center fixed;
+    @include background-size(cover);
+}
+#login, #register
+{
+    margin-top: 80px;
+    padding: 50px 15px 30px 15px;
+    @include transparent-background(#444,0.55);
+    @include border-radius(4px 4px 0 0);
+    p
+    {
+        padding-top: 10px;
+        font-size: 12px;
+        text-align: center;
+        color: $primary-color-text;
+    }
+    a
+    {
+        color: $primary-color;
+        &:active,&:focus,&:hover
+        {
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+#loginsubmit,#registersubmit
+{
+    background: $primary-color;
+    width: 100%;
+    border: none;
+    color: $primary-color-text;
+    font-weight: bold;
+}
+input
+{
+    margin-bottom: 16px;
+}
+.input-style
+{
+    padding: 20px 15px 20px 15px;
+}
+.button-style
+{
+    padding: 10px 0 10px 0;
+}
+footer
+{
+    @include transparent-background(#000,0.55);
+    @include always-bottom();
+    padding-top: 10px;
+    text-align: center;
+    color: $landing-footer-text-color;
+    font-size: 11px;
+}

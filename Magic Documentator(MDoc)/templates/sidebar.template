@@ -1,0 +1,15 @@
+{% extends "main.template" %}
+{% block sidebar_styles %}
+  <link rel="stylesheet" href="../css/sidebar.css" />
+{% endblock %}
+{% block sidebar %}
+  <img class="img-responsive" style="border: 1px dotted black;" src="imgs/logo.png"/>
+  {% for section in sidebar %}
+    <p class="sidebar_header">{{section.header}}</p>
+    <ul class="sidebar_menu">
+      {% for item in section.menu %}
+        <li>{{item|raw}}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endblock %}

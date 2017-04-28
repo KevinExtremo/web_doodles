@@ -1,0 +1,41 @@
+{% extends "sidebar.template" %}
+{% block title%}{{resource.name}}{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="../css/resource.css" />
+{% endblock %}
+{% block content %}
+  <div class="col-md-10">
+    <div class="resource">
+      <h2 class="resource_name">{{resource.name}}<small class="resource_author"> by {{resource.author}}</small></h2>
+      <h4>Description</h4>
+      <p class="resource_description">{{resource.description}}</p>
+      <h4>Functions</h4>
+      <ul class="resource_function_list">
+        {% for function in function_list %}
+          <li><p class="resource_function_specifics"><span class="function_name">{{function.name}}</span> - {{function.description}}</p></li>
+        {% endfor %}
+      </ul>
+      <h4>Events</h4>
+      <ul class="resource_event_list">
+        {% for event in event_list %}
+          <li><p class="resource_event_specifics"><span class="event_name">{{event.name}}</span> - {{event.description}}</p></li>
+        {% endfor %}
+      </ul>
+      <h4>Changelog</h4>
+      <div class="changelog">
+        <table>
+          <tr>
+            <th>Version</th>
+            <th>Description</th>
+          </tr>
+          {% for change in changelog %}
+          <tr>
+            <td>{{change.version|raw}}</td>
+            <td>{{change.description}}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+<?php
+
+namespace eXmarket;
+
+class MarketBuyOrder
+{
+	private $database_id;
+	private $eve_id;
+	private $name;
+	private $description;
+	private $image_url;
+	
+	public function __construct($database_id,$eve_id,)
+	{
+		$this->database_id = $database_id;
+		$this->eve_id = $eve_id;
+		$this->
+		$this->
+		$this->
+	}
+}
+
+
+
+
+?>

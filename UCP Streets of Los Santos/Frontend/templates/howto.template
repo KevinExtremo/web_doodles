@@ -1,0 +1,8 @@
+[index] { @description, @keywords, @title }
+
+[cp-layout] { @description, @keywords, @title, @cp-content }
+    [cp-navbar] { }
+    [(@cp-content):   
+        [cp-header] { @avatar, @username }
+        [cp-sidebar] { @characterlist, @factionlist }
+        [cp-content] { @content } ]

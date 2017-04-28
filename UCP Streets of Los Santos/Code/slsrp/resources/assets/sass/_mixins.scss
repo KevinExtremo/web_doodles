@@ -1,0 +1,40 @@
+@mixin background-size($option)
+{
+    -webkit-background-size: $option;
+    -moz-background-size: $option;
+    -o-background-size: $option;
+    background-size: $option;
+}
+@mixin border-radius($radius) 
+{
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin height-calc($height) 
+{
+    height: -webkit-calc($height);
+    height: -moz-calc($height);
+    height: -ms-calc($height);
+    height: calc($height);
+}
+@mixin transparent-background($color, $transparency)
+{
+    background: $color;
+    background: rgba(0,0,0,$transparency);
+}
+@mixin always-bottom()
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}

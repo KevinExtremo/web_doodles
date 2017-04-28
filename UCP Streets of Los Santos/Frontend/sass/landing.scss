@@ -1,0 +1,128 @@
+@import 'reset';
+@import 'mixins';
+@import 'colors';
+@import 'images';
+
+body
+{
+    background: url($landing-background) no-repeat center center fixed;
+    @include background-size(cover);
+}
+#logo
+{
+    margin-bottom: 80px;
+}
+#login
+{
+    padding: 50px 15px 30px 15px;
+    @include transparent-background(#444,0.55);
+    @include border-radius(4px 4px 0 0);
+    p
+    {
+        padding-top: 10px;
+        font-size: 12px;
+        text-align: center;
+        color: $primary-color-text;
+    }
+    a
+    {
+        color: $primary-color;
+        &:active,&:focus,&:hover
+        {
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+#loginsubmit,#registersubmit
+{
+    background: $primary-color;
+    width: 100%;
+    border: none;
+    color: $primary-color-text;
+    font-weight: bold;
+}
+input
+{
+    margin-bottom: 16px;
+}
+.input-style
+{
+    padding: 20px 15px 20px 15px;
+}
+.button-style
+{
+    padding: 10px 0 10px 0;
+}
+#register
+{
+    @include transparent-background(#444,0.55);
+    @include border-radius(4px 4px 0 0);
+    margin-top: -76%;
+    visibility: hidden;
+    position: relative;
+    height: 430px;
+    input
+    {
+        margin-left: 10%;
+    }
+    p 
+    {
+        position: absolute;
+        top: 140px;
+        left: 75px;
+        font-size: 12px;
+        color: $primary-color-text;
+    }
+    #registerusername
+    {
+        position: absolute;
+        top: -193px;
+        left: 28px;
+        width: 268px;
+    }
+    #registeremail
+    {
+        position: absolute;
+        top: -136px;
+        left: 28px;
+        width: 268px;
+    }
+    #registeremailtwo
+    {
+        position: absolute;
+        top: -79px;
+        left: 28px;
+        width: 268px;
+    }
+    #registerpassword
+    {
+        position: absolute;
+        top: -22px;
+        left: 28px;
+        width: 268px;
+    }
+    #registerpasswordtwo
+    {
+        position: absolute;
+        top: 35px;
+        left: 28px;
+        width: 268px;
+    }
+    #registersubmit
+    {
+        position: absolute;
+        top: 92px;
+        left: 28px;
+        width: 268px;
+    }
+}
+footer
+{
+    @include transparent-background(#000,0.55);
+    @include always-bottom();
+    padding-top: 10px;
+    text-align: center;
+    color: $landing-footer-text-color;
+    font-size: 11px;
+}

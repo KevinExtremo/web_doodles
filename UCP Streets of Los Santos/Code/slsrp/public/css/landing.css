@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#login, #register {
+  margin-top: 80px;
+  padding: 50px 15px 30px 15px;
+  background: #444;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 4px 4px 0 0;
+}
+
+#login p, #register p {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+#login a, #register a {
+  color: #1976d2;
+}
+
+#login a:active, #login a:focus, #login a:hover, #register a:active, #register a:focus, #register a:hover {
+  color: #1976d2;
+  cursor: pointer;
+}
+
+#loginsubmit, #registersubmit {
+  background: #1976d2;
+  width: 100%;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 16px;
+}
+
+.input-style {
+  padding: 20px 15px 20px 15px;
+}
+
+.button-style {
+  padding: 10px 0 10px 0;
+}
+
+footer {
+  background: #000;
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+}
+
+/*# sourceMappingURL=landing.css.map */

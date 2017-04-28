@@ -1,0 +1,42 @@
+{% extends "sidebar.template" %}
+{% block title%}{{function.name}}{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="../css/function.css" />
+{% endblock %}
+{% block content %}
+  <div class="function">
+    <h2 class="function_name">{{function.name}}<small class="function_author"> by {{function.author}}</small></h2>
+    <h4>Description</h4>
+    <p class="function_description">{{function.description}}</p>
+    <h4>Returns</h4>
+    <p class="function_return">This function returns a <span class="return_type">{{function.return_type}}.</span></p>
+    <ul class="function_return_list">
+      {% for return in return_list %}
+        <li><p class="function_return_specifics"><span class="return_value">{{return.value}}</span> {{return.description}}</p></li>
+      {% endfor %}
+    </ul>
+    <h4>Examples</h4>
+    <div class="examples">
+      {% for example in examples %}
+        <div class="code">
+        {{example.code|raw}}
+        </div>
+      {% endfor %}
+    </div>
+    <h4>Changelog</h4>
+    <div class="changelog">
+      <table>
+        <tr>
+          <th>Version</th>
+          <th>Description</th>
+        </tr>
+        {% for change in changelog %}
+        <tr>
+          <td>{{change.version|raw}}</td>
+          <td>{{change.description}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+!SESSION 2016-12-12 13:13:11.595 -----------------------------------------------
+eclipse.buildId=3.6.1.201410201044
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.git.core 4 0 2016-12-12 21:08:07.779
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Errors occurred while grabbing changed file listings
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.459
+!MESSAGE Cannot run program "ruby": CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.702
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.711
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected block on top of stack, but was: params()
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.714
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected method decl on top of stack, but was: PHPFunction
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.718
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.721
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.724
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.727
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected block on top of stack, but was: params()
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.730
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected method decl on top of stack, but was: PHPFunction
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.733
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.735
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.758
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2016-12-12 21:08:08.762
+!MESSAGE (Build 3.6.1.201410201044) [ERROR]  Expected block on top of stack, but was: 

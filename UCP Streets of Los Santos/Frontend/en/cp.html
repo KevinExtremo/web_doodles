@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add a description here -->
+    <meta name="description" content="Description of your website here">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index,follow">
+    <!-- Icon stuff -->
+    <link rel="icon" sizes="196x196" href="icons/icon196.png">
+    <link rel="icon" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="icons/icon128.png">
+    <link rel="apple-touch-startup-image" href="icons/icon196.png">
+    <link rel="shortcut-icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" href="icons/favicon.png" sizes="32x32">
+    
+    
+    <head>
+        <!-- HTML5 shim and respond.js for IE8 and below support. -->
+        <!--[if lt IE 9]>
+            <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="html5shiv/dist/html5shiv.min.js"><\/script>')</script>
+            <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- Google Fonts -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- CP Layout -->
+        <link rel="stylesheet" href="../css/cp-layout.css">
+        <!-- Personal code for header here -->
+        <title>SLS Control Panel</title>
+        
+    </head>
+    <body>
+        <!-- Inform user of outdated browsers -->
+        <script> 
+        var $buoop = {reminder:0,reminderClosed:1}; 
+        function $buo_f(){ 
+         var e = document.createElement("script"); 
+         e.src = "//browser-update.org/update.min.js"; 
+         document.body.appendChild(e);
+        };
+        try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+        catch(e){window.attachEvent("onload", $buo_f)}
+        </script> 
+        
+        
+        <!-- container -->
+        <div class="container">
+            <div class="row">
+                <!-- navbar -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <nav class="navbar navbar-custom">
+                        <!-- collapsed version of navbar -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">SLS Roleplay</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <!-- important to have current for screen readers -->
+                                <li class="active"><a href="#Home">Home <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#CCP">CCP</a></li>
+                                <li><a href="#CCP">Forums</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- banner between navbar and cp-header -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <section class="banner">
+                        <img src="../images/banner.jpg" />
+                        <div class="banner-footer hidden-xs hidden-sm hidden-md">
+                            <div class="banner-content">
+                                <p>Players Online: <span class="banner-number">69</span></p>
+                                <p>Total Playing Hours: <span class="banner-number">433</span></p> 
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- cp-header where account name and icons are -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <section class="cp-header">
+                        <img class="border" src="../images/avatar-border.png">
+                        <img class="avatar" src="../images/avatar.jpg" />
+                        <h1>Marcus</h1>
+                        <div class="cp-nav hidden-xs hidden-sm hidden-md">
+                            <a href="#"><span class="glyphicon glyphicon-cog"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-off"></span></a>
+                        </div>
+                    </section>
+                </div>
+                <!-- cp content where sidebar and main content is -->
+                <section class="cp-content">
+                    <!-- cp sidebar -->
+                      <div class="col-lg-2 col-md-2 col-sm-2">
+                        <section class="cp-sidebar">
+                            <div class="sidebar-itemgroup">
+                                <div class="sidebar-menuitem sidebar-menuactive" id="sidebar-characters">Characters</div>
+                                <div class="sidebar-subgroup"  menu-parent='sidebar-characters'>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Tommy Athens</div>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Juan Carlito</div>
+                                    <div class="sidebar-subaction">Create New</div>
+                                    <div class="sidebar-activetrimmer"></div>
+                                </div>
+                                <div class="sidebar-menuitem" id="sidebar-factionpanel">Faction Panel</div>
+                                <div class="sidebar-subgroup"  menu-parent='sidebar-factionpanel'>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Los Santos Police Department</div>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Los Santos Federal Government</div>
+                                    <div class="sidebar-subaction">Create New</div>
+                                    <div class="sidebar-activetrimmer"></div>
+                                </div>
+                                <div class="sidebar-menuitem" id="sidebar-adminpanel">Admin Panel</div>
+                                <div class="sidebar-subgroup"  menu-parent='sidebar-adminpanel'>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Recent Admin Actions</div>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Admin Logs</div>
+                                    <div class="sidebar-subaction">Ban Player</div>
+                                    <div class="sidebar-activetrimmer"></div>
+                                </div>
+                                <div class="sidebar-menuitem" id="sidebar-settings">Settings</div>
+                                <div class="sidebar-subgroup"  menu-parent='sidebar-settings'>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Account Settings</div>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">Character Settings</div>
+                                    <img src="../images/sidebar-item.png"/><div class="sidebar-subitem">CCP Settings</div>
+                                    <div class="sidebar-activetrimmer"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- cp main content -->
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <section class="cp-main">
+                        </section>
+                    </div>
+                </section>
+                <!-- footer credits -->
+                <footer>
+                    <div class="col-lg-4 col-md-4 col-sm-4"></div><!-- empty magic -->
+                    <div class="col-lg-4 col-md-4 col-sm-4"><p>Copyright 2017&copy; developed by Kevin 'Extremo' Sekin</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4"></div><!-- empty magic -->
+                </footer>
+            </div>
+        <!-- end of container -->
+        </div>
+        
+        
+        
+        <!-- All scripts go below this point to allow the page to load fully before scripts are loaded. -->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="jquery-3.1.0/jquery-3.1.0.min.js"\x3C/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>$.fn.modal || document.write('<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"\x3C/script>')</script>
+        <script src="../js/cp-content.js"></script>
+        <script src="../js/cp-sidebar.js"></script>
+    </body>
+</html>
